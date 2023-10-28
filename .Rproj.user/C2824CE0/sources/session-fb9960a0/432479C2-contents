@@ -1,0 +1,10 @@
+#useDynLib(pchc, .registration = TRUE)
+
+
+importFrom("quadprog", solve.QP)
+importFrom("Rfast2", cls)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+export(cls, pls)
