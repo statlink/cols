@@ -22,7 +22,7 @@ A matrix with independent variables, the design matrix.
 }
 
 \details{
-The constraint is that all beta coefficients (including the constant) are non negative.
+The constraint is that all beta coefficients (including the constant) are positive.
 }
 
 \value{

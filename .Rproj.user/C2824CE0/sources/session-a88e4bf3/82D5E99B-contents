@@ -1,15 +1,15 @@
-\name{Positively constrained least squares}
-\alias{pls}
+\name{Positive and unit sum constrained least squares}
+\alias{pcls}
 \title{
-Positively constrained least squares
+Positive and unit sum constrained least squares
 }
 
 \description{
-Positively constrained least squares.
+Positive and unit sum constrained least squares.
 }
 
 \usage{
-pls(y, x)
+pcls(y, x)
 }
 
 \arguments{
@@ -22,7 +22,7 @@ A matrix with independent variables, the design matrix.
 }
 
 \details{
-The constraint is that all beta coefficients (including the constant) are non negative.
+The constraint is that all beta coefficients are positive and sum to 1.
 }
 
 \value{
@@ -35,10 +35,6 @@ The mean squared error.
 }
 }
 
-%\references{
-%Hansen, B. E. (2022). Econometrics, Princeton University Press.
-%}
-
 \author{
 Michail Tsagris.
 
@@ -50,12 +46,12 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 %}
 
 \seealso{
-\code{\link{cls}
+\code{\link{pls}
 }
 }
 
 \examples{
 x <- as.matrix( iris[1:50, 1:4] )
 y <- rnorm(50)
-pls(y, x)
+pcls(y, x)
 }
