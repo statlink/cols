@@ -16,7 +16,7 @@ mpcls(y, x)
 
 \arguments{
 \item{y}{
-The response variable. For the pcls() a numerical vector with observations, but for the mpcls() a numerical matrix.
+The response variable. For the pcls() a numerical vector with observations, but for the mpcls() a numerical matrix .
 }
 \item{x}{
 A matrix with independent variables, the design matrix.
@@ -30,7 +30,7 @@ The constraint is that all beta coefficients are positive and sum to 1. The pcls
 \value{
 A list including:
 \item{be}{
-A numerical matrix with the positively constrained beta coefficients.
+A numerical matrix with he positively constrained beta coefficients.
 }
 \item{mse}{
 A numerical vector with the mean squared error.
