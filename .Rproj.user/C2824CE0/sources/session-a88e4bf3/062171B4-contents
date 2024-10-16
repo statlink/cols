@@ -1,0 +1,16 @@
+pls <- function(y, x) {
+
+  dm <- dim(x)
+  n <- dm[1]   ;   p <- dm[2]
+
+  dvec <-  2 * as.vector( crossprod(x, y) )
+  xx <- crossprod(x)
+  A <- diag(p)
+  bvec <- rep(0, p)
+  f <- quadprog::solve.QP(Dmat = 2 * xx, dvec = dvec, Amat = A, bvec = bvec)
+  be <- as.matrix( f$solution )
+  rownames(be) <- colnames(x)
+  mse <- ( sum(y^2) + f$value ) / n
+
+  list(be = be, mse = mse)
+}
