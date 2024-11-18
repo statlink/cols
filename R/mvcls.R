@@ -1,4 +1,4 @@
-mcls <- function(y, x, R, ca) {
+mvcls <- function(y, x, R, ca) {
 
   dm <- dim(x)
   n <- dm[1]  ;  p <- dm[2]
