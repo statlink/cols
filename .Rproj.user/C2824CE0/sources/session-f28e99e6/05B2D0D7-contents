@@ -9,7 +9,7 @@ Lower and upper bound constrained least squares
 }
 
 \usage{
-int.cls(y, x, lb, ub)
+ind.cls(y, x, lb, ub)
 }
 
 \arguments{
