@@ -1,4 +1,4 @@
-int.mpcls <- function(y, x, lb, ub) {
+int.mcls <- function(y, x, lb, ub) {
 
   dm <- dim(x)
   n <- dm[1]   ;   p <- dm[2]
