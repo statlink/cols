@@ -25,7 +25,7 @@ A matrix with independent variables, the design matrix.
 
 \details{
 The constraint is that all beta coefficients (including the constant) are non negative, i.e.
-\eqn{min \sum_{i=1}^n(y_i-\bm{x}_i^\top\bm{\beta})^2} such that \eqn{\beta_j \geq 0}. The pls() function performs a single regression model, whereas the mpls() function performs a regression for each column of y. Each regression is independent of the others.
+\eqn{min \sum_{i=1}^n(y_i-\bm{x}_i^\top\bm{\beta})^2} such that \eqn{\beta_i \geq 0}. The pls() function performs a single regression model, whereas the mpls() function performs a regression for each column of y. Each regression is independent of the others.
 }
 
 \value{
