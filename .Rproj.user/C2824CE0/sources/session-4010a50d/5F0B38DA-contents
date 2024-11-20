@@ -1,19 +1,13 @@
-int.mcls <- function(y, x, lb, ub) {
+mpcls <- function(y, x) {
 
   dm <- dim(x)
   n <- dm[1]   ;   p <- dm[2]
   d <- dim(y)[2]
-
-  A <- diag(p)
-  A <- rbind(A, -A)
-  A <- t(A)
-  if ( length(lb) == 1 )  lb <- rep(lb, p)
-  if ( length(ub) == 1 )  ub <- rep(ub, p)
-  bvec <- c(lb, -ub)
-
   dvec <-  2 * crossprod(x, y)
-  xx <- crossprod(x)
 
+  xx <- 2 * crossprod(x)
+  A <- cbind(1, diag(p) )
+  bvec <- c(1, rep(0, p) )
   mse <- rep( sum(y^2), d)
   be <- matrix(nrow = p, ncol = d)
 
