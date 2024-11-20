@@ -28,7 +28,7 @@ A vector or a single value with the upper bound(s) in the coefficients.
 }
 
 \details{
-This function performs least squares under the constraint that the beta coefficients lie within interval(s), i.e. \eqn{min \sum_{i=1}^n(y_i-\bm{x}_i\bm{\beta})} such that \eqn{lb_i\leq \beta_i \leq ub_i}.
+This function performs least squares under the constraint that the beta coefficients lie within interval(s), i.e. \eqn{min \sum_{i=1}^n(y_i-\bm{x}_i\bm{\beta})^2} such that \eqn{lb_i\leq \beta_i \leq ub_i}.
 }
 
 \value{

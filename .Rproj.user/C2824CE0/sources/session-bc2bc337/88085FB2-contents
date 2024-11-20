@@ -24,7 +24,8 @@ A matrix with independent variables, the design matrix.
 }
 
 \details{
-The constraint is that all beta coefficients are positive and sum to 1. The pcls() function performs a single regression model, whereas the mpcls() function performs a regression for each column of y. Each regression is independent of the others.
+The constraint is that all beta coefficients are positive and sum to 1. that is
+\eqn{min \sum_{i=1}^n(y_i-\bm{x}_i\bm{\beta})^2} such that \eqn{0\leq \beta_i \leq 1} and \eqn{\sum_{j=1}^d\beta_j=1}. The pcls() function performs a single regression model, whereas the mpcls() function performs a regression for each column of y. Each regression is independent of the others.
 }
 
 \value{
