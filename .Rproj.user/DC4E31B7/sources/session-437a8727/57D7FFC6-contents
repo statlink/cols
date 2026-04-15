@@ -1,0 +1,11 @@
+#useDynLib(pchc, .registration = TRUE)
+
+importFrom("nnsolve", fnnls, fnnls_regs)
+importFrom("quadprog", solve.QP)
+importFrom("Rfast", colsums, colmeans)
+importFrom("Rfast2", cls)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+export(cls, int.cls, int.mcls, pls, mvcls, mvpls, pcls, mpls, mpcls)
