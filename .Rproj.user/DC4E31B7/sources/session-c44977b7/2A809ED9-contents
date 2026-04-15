@@ -1,8 +1,8 @@
 Package: cols
 Type: Package
 Title: Constrained Ordinary Least Squares 
-Version: 1.6
-Date: 2026-03-24
+Version: 1.7
+Date: 2026-04-15
 Authors@R: person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr")
 Author: Michail Tsagris [aut, cre]
 Maintainer: Michail Tsagris <mtsagris@uoc.gr>
